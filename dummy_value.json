@@ -1,0 +1,50 @@
+[
+    {
+        "__id": 1,
+        "isbn": "9783406659928",
+        "title": "Die Verwandlung",
+        "author": "Franz Kafka",
+        "publisher": "C.H.Beck",
+        "published_date": "2014",
+        "is_available": false,
+        "box_member": [{
+            "box_id": 1,
+            "box_name": "Box Trabrennbahn"
+        },
+        {
+            "box_id": 2,
+            "box_name": "Box Jungfernstieg"
+        }
+        ]
+    },
+    {
+        "__id": 2,
+        "isbn": "9783453504035",
+        "title": "Es",
+        "author": "Stephen King",
+        "publisher": "Heyne",
+        "published_date": "2017",
+        "box_member": [{
+            "box_id": 3,
+            "box_name": "Box Wilhelmsburg"
+        },
+        {
+            "box_id": 2,
+            "box_name": "Box Jungfernstieg"
+        }
+        ]
+    },
+    {
+        "__id": 3,
+        "isbn": "9783426306079",
+        "title": "Töte was du liebst",
+        "author": "Christian Kraus",
+        "publisher": "Droemer",
+        "published_date": "2018",
+        "box_member": [{
+            "box_id": 1,
+            "box_name": "Box Trabrennbahn"
+        }
+        ]
+    }
+]

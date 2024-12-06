@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Box Trabrennbahn",
+        "created_date": "2024-01-01T00:00:00.000Z",
+        "created_by": "Christof",
+        "pluscode": "9F5GH4X2+7G",
+        "ort": "Hamburg",
+        "images": ["a1.jpg", "a2.jpg", "a3.jpg"],
+        "books": [
+            {
+                "isbn": "9783453504035",
+                "title": "Es",
+                "author": "Stephen King",
+                "publisher": "Heyne",
+                "published_date": "2017",
+                "is_available": true
+            },
+            {
+                "isbn": "9783426306079",
+                "title": "Töte was du liebst",
+                "author": "Christian Kraus",
+                "publisher": "Droemer",
+                "published_date": "2018",
+                "is_available": true
+            }
+        ]
+    },
+    {
+        "name": "Box Jungfernstieg",
+        "created_date": "2024-01-01T00:00:00.000Z",
+        "created_by": "Hannes",
+        "pluscode": "9F5FHX3R+HG",
+        "ort": "Hamburg",
+        "images": ["a1.jpg", "a2.jpg", "a3.jpg"],
+        "books": [
+            {
+                "isbn": "9783406659928",
+                "title": "Die Verwandlung",
+                "author": "Franz Kafka",
+                "publisher": "C.H.Beck",
+                "published_date": "2014",
+                "is_available": false
+            },
+            {
+                "isbn": "9783426306079",
+                "title": "Töte was du liebst",
+                "author": "Christian Kraus",
+                "publisher": "Droemer",
+                "published_date": "2018",
+                "is_available": true
+            }
+        ]
+    },
+    {
+        "name": "Box Wilhelmsburg",
+        "created_date": "2024-01-01T00:00:00.000Z",
+        "created_by": "Hakon",
+        "pluscode": "9F5GF2X5+H6",
+        "ort":"Hamburg",
+        "images": ["a1.jpg", "a2.jpg", "a3.jpg"],
+        "books": [
+            {
+                "isbn": "9783453504035",
+                "title": "Es",
+                "author": "Stephen King",
+                "publisher": "Heyne",
+                "published_date": "2017",
+                "is_available": true
+            }
+        ]
+    }
+]
