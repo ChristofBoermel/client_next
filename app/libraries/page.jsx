@@ -5,6 +5,13 @@ import Library from '@/models/library';
 const LibrariesPage = async() => {
     await connectDB();
     const libraries = await Library.find({});
+
+    function omitUndefined(val) {
+        const keys = Object.keys(val);
+        for (let i = 0, len = keys.length; i < len; ++i) {
+          (val[keys[i]] === void 0) && delete val[keys[i]];
+        }
+      }
     console.log(libraries);
 
     return ( 
@@ -15,6 +22,7 @@ const LibrariesPage = async() => {
                         <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
                             {
                                 libraries.map((library) => (
+                                    omitUndefined(library),
                                     <LibraryCard key={library._id} library={library} />
                             ))}
                         </div>

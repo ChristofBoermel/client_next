@@ -6,6 +6,7 @@ import {
 
 
 const LibraryCard = ( {library}) => {
+  console.log(library.images);
     return ( 
           <div className="rounded-xl shadow-md relative">
             <Image
@@ -31,7 +32,7 @@ const LibraryCard = ( {library}) => {
 
               <div className="flex justify-center gap-4 text-gray-500 mb-4 text-2xl">
                 <p> 
-                  <span className="md:hidden lg:inline">Available books: 3</span>
+                  <span className="md:hidden lg:inline">Available books: {library.books.length}</span>
                 </p>
               </div>
 
@@ -48,6 +49,7 @@ const LibraryCard = ( {library}) => {
                   <i
                     className="fa-solid fa-location-dot text-lg text-orange-700"
                   ></i>
+                  <span className="text-orange-700"> {library.ort} </span>
                   <span className="text-orange-700"> {library.ort} </span>
                 </div>
                 <Link
