@@ -2,7 +2,7 @@ import connectDB from '../../../config/database';
 import Library from '../../../models/library';
 import LibraryHeaderImage from '../../../components/LibraryHeaderImage';
 import Link from 'next/link';
-import { FaArrowLeft } from 'react-icons/fa';
+import { FaArrowLeft, FaPlus } from 'react-icons/fa';
 import LibraryDetails from '../../../components/LibraryDetails';
 
 const LibraryPage = async({params}) => {

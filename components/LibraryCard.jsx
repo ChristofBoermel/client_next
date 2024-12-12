@@ -31,11 +31,14 @@ const LibraryCard = ( {library}) => {
               </h3>
 
               <div className="flex justify-center gap-4 text-gray-500 mb-4 text-2xl">
+                {library.books === undefined ? (
+                  <p>No books</p>) : (
                 <p> 
                   <span className="md:hidden lg:inline">Available books: {library.books.length}</span>
                 </p>
+                )}
               </div>
-
+              
               <div
                 className="flex justify-center gap-4 text-green-900 text-sm mb-4"
               >

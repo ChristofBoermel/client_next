@@ -2,6 +2,8 @@ const LibraryDetails = ({library}) => {
 
     return ( 
   <main>
+    {library.books === undefined ? (
+      <p>No books</p>) : (
 <div className="flex flex-col">
   <div className="-m-1.5 overflow-x-auto">
     <div className="p-1.5 min-w-full inline-block align-middle">
@@ -22,9 +24,6 @@ const LibraryDetails = ({library}) => {
               <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800" key={book.author}>{book.author}</td>
               <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800" key={book.publisher}>{book.publisher}</td>
               <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800" key={book.isbn}>{book.isbn}</td>
-              <td className="px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
-                <button type="button" className="inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-blue-600 hover:text-blue-800 focus:outline-none focus:text-blue-800 disabled:opacity-50 disabled:pointer-events-none">Delete</button>
-              </td>
             </tr>
             ))}
           </tbody>
@@ -33,6 +32,7 @@ const LibraryDetails = ({library}) => {
     </div>
   </div>
 </div>
+    )}
 </main>
      );
 }

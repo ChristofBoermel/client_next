@@ -1,6 +1,8 @@
 import LibraryCard from '../../components/LibraryCard';
 import connectDB from '@/config/database';
 import Library from '@/models/library';
+import Link from 'next/link';
+import { FaPlus } from 'react-icons/fa';
 
 const LibrariesPage = async() => {
     await connectDB();
@@ -16,6 +18,14 @@ const LibrariesPage = async() => {
 
     return ( 
         <section className='px-4 py-6'>
+      <div className="container m-auto py-6 px-6">
+        <Link
+          href={`/libraries/addLibraries`}
+          className="text-blue-500 hover:text-blue-600 flex items-center"
+        >
+          <FaPlus className='mr-2'></FaPlus> Add Library
+        </Link>
+      </div>
             <div className='container-xl lg:container m-auto px-4 py-6'>
                 {libraries.length === 0 ? (
                     <p>No libraries</p>) : (

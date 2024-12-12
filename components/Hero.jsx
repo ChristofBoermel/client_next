@@ -1,3 +1,5 @@
+import LibrarySearchForm from "../components/LibrarySearchForm";
+
 const Hero = () => {
     return ( 
         <section className="bg-[#ebe0c7] py-20 mb-4 mt-2">
@@ -19,25 +21,7 @@ const Hero = () => {
 
           </div>
           {/* <!-- Form Component --> */}
-          <form
-            className="mt-3 mx-auto max-w-2xl w-full flex flex-col md:flex-row items-center"
-          >
-            <div className="w-full md:w-3/5 md:pr-2 mb-4 md:mb-0">
-              <label htmlFor="location" className="sr-only">Location</label>
-              <input
-                type="text"
-                id="location"
-                placeholder="Your location"
-                className="w-full px-4 py-3 rounded-lg bg-white text-gray-800 focus:outline-none focus:ring focus:ring-blue-500"
-              />
-            </div>
-            <button
-              type="submit"
-              className="md:ml-4 mt-4 md:mt-0 w-full md:w-auto px-6 py-3 rounded-lg bg-[#867754] text-white hover:bg-[#65593f] focus:outline-none focus:ring focus:ring-blue-500"
-            >
-              Search
-            </button>
-          </form>
+          <LibrarySearchForm></LibrarySearchForm>
           <div className="mt-14">
           <p className="text-4xl text-[#3b2d0e]" > Tiny Libraries are</p>
           <p className="my-4 text-base text-[#3b2d0e] text-balance">
