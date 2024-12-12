@@ -1,0 +1,11 @@
+{
+    "extends": ["next", "prettier"],
+    "plugins": ["react", "react-hooks"],
+    "rules": {
+      "react/no-unescaped-entities": ["error", {
+        "forbid": ["&gt;", "}"],
+        "allow": ["'"]
+      }],
+      "@next/next/no-page-custom-font": "off"
+    }
+  }

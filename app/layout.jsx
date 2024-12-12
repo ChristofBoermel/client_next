@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 
 export const metadata = {
     title: 'client_next',
-    keywords: 'meow, cat, dog',
+    keywords: 'books, library, reading, nextjs, community, book club',
     description: 'This is a description of my website',
 };
 
